@@ -1,0 +1,5 @@
+select Firstname,LastName,Department.DepartmentName from Employee join Department on Department.Id = Employee.DepartmentId
+select * from Employee where LastName LIKE 'W%' 
+Update Employee Set EndDate = CAST('2020-12-23' AS DATETIME) Where Id=6
+select * from Employee
+select * from Employee inner join Department on IsActive = 0 where Departmentid = Department.Id
